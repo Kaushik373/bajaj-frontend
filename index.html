@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Roll Number</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JSON Validator & API Caller</h1>
+        <form id="jsonForm">
+            <label for="jsonInput">Enter JSON:</label>
+            <textarea id="jsonInput" rows="5" placeholder='{"key":"value"}'></textarea>
+            <button type="submit">Submit</button>
+            <div id="error" class="error"></div>
+        </form>
+
+        <div id="dropdownContainer" class="hidden">
+            <label for="options">Select Options:</label>
+            <select id="options" multiple>
+                <option value="alphabets">Alphabets</option>
+                <option value="numbers">Numbers</option>
+                <option value="highest-lowercase">Highest Lowercase Alphabet</option>
+            </select>
+        </div>
+
+        <div id="responseContainer" class="hidden">
+            <h2>Response:</h2>
+            <pre id="responseOutput"></pre>
+        </div>
+    </div>
+</body>
+</html>
